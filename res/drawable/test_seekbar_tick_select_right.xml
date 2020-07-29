@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/grip_sensor_tap_right_color" />
+    <stroke android:width="0.0dip" android:color="@color/test_seekbar_tick_solid_color_right" />
+    <corners android:radius="4.0dip" />
+    <size android:height="@dimen/tap_test_tick_height" android:width="@dimen/tap_test_tick_width" />
+</shape>

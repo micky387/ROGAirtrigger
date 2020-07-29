@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="16.0dip" android:width="88.0dip" android:viewportWidth="88.0" android:viewportHeight="16.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_asus_grip_sensor_hotkey_blue_swipe_r__0" android:pathData="M84,4H4L0,0h88z" android:fillType="nonZero" />
+    <path android:fillColor="#ff0078ff" android:pathData="M28.5,14.005h27.025v1.501H28.5z" android:fillType="evenOdd" />
+    <path android:fillColor="#ff0078ff" android:pathData="M51.772,9l7.319,6.506h-7.32z" android:fillType="evenOdd" />
+</vector>

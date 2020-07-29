@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/grip_strength_adjust_page_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd">
+        <TextView android:textSize="20.0sp" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/gripsensor_grip_strength_adjust_title" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gripsensor_grip_strength_low" android:layout_alignParentLeft="true" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gripsensor_grip_strength_high" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.asus.airtriggers.widget.SqueezeLevelSeekBar android:id="@id/seek_bar" android:layout_width="fill_parent" android:layout_height="50.0dip" android:thumb="@drawable/grip_seekbar_default_thumb_bg" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/txt_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_alignParentLeft="true" />
+            <TextView android:id="@id/txt_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_intro" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <TextView android:textSize="13.0sp" android:gravity="center" android:id="@id/txt_intro_old" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/intro_pressure_old" android:drawablePadding="8.0dip" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="13.0sp" android:gravity="center" android:id="@id/txt_intro_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/intro_pressure_new" android:drawablePadding="8.0dip" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/txt_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gripsensor_noti_margin_top" android:text="@string/gripsensor_grip_strength_adjust_desc" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd" />
+        <com.asus.airtriggers.widget.GifView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tutorial_gif" android:layout_width="270.0dip" android:layout_height="270.0dip" android:layout_marginTop="@dimen/gripsensor_gif_margin_top" android:src="@drawable/ic_asus_pic_settings_grip_sensor_gif"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <ImageView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/img_tutorial" android:visibility="gone" android:layout_width="270.0dip" android:layout_height="270.0dip" android:layout_marginTop="@dimen/gripsensor_gif_margin_top" android:src="@drawable/asus_pic_settings_grip_sensor" />
+        <TextView android:textSize="14.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_noti" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gripsensor_desc_margin_top" android:text="@string/grip_notifi_release" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/button_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gripsensor_btn_margin_top" android:layout_centerHorizontal="true">
+        <Button android:gravity="center" android:id="@id/cancel_button" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_weight="1.0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" style="?asusresOutlinedButtonStyle" />
+        <Button android:gravity="center" android:id="@id/done_button" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="@string/btn_apply" android:layout_weight="1.0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/button_bar_suw" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textAppearance="?asusresTextAppearanceButtonBorderlessColored" android:gravity="center" android:id="@id/cancel_button_suw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skip_button_label" android:layout_marginStart="16.0dip" android:layout_alignParentStart="true" style="?android:borderlessButtonStyle" />
+        <Button android:gravity="center" android:id="@id/done_button_suw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_apply" android:layout_marginEnd="28.0dip" android:layout_alignParentEnd="true" style="@style/SuwGlifButton.Primary.Customize" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gripsensor_hint_margin_top" android:src="@drawable/grip_sensor_hint_left" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:alpha="0.6" android:scaleY="2.0" />
+        <ImageView android:id="@id/img_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gripsensor_hint_margin_top" android:src="@drawable/grip_sensor_hint_right" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:alpha="0.6" android:scaleY="2.0" />
+    </RelativeLayout>
+</RelativeLayout>

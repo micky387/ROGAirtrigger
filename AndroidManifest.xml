@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" android:sharedUserId="android.uid.system" coreApp="true" package="com.asus.airtriggers" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BIND_JOB_SERVICE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="com.asus.launcher.permission.CATEGORY_ACCESS"/>
+    <uses-permission android:name="com.asus.focusapplistener.permission.GAME_GENIE_PROVIDER"/>
+    <uses-permission android:name="com.android.settings.gripsensor.PROVIDER"/>
+    <uses-permission android:name="ndroid.permission.BIND_SETTINGS_SUGGESTIONS_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <permission android:name="com.asus.airtriggers.gripsensor.PROVIDER"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:defaultToDeviceProtectedStorage="true" android:directBootAware="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/asus_advanced_settings_gripsensor" android:name="com.asus.airtriggers.AirTriggerApplication" android:requiredForAllUsers="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <service android:enabled="true" android:exported="true" android:name="com.asus.airtriggers.service.GripSensorService" android:permission="android.permission.BIND_JOB_SERVICE" android:process="com.asus.services">
+            <intent-filter>
+                <action android:name="com.asus.airtriggers.GRIP_SENSOR_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.asus.airtriggers.firebase.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.asus.airtriggers.MainActivity">
+            <intent-filter>
+                <action android:name="asus.intent.action.AIRTRIGGER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.asus.airtriggers.gripsensor" android:exported="true" android:name="com.asus.airtriggers.provider.GripProvider" android:permission="com.asus.airtriggers.gripsensor.PROVIDER" android:process="com.asus.services"/>
+        <activity android:launchMode="singleTop" android:name="com.asus.airtriggers.GripStrengthAdjustActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.asus.airtriggers.GameAdjustActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.asus.airtriggers.AsusSetupGripStrengthAdjustActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.asus.airtriggers.ContinuousTapPage" android:screenOrientation="landscape"/>
+        <activity android:launchMode="singleTop" android:name="com.asus.airtriggers.SlightTapPage" android:screenOrientation="landscape"/>
+        <activity android:launchMode="singleTop" android:name="com.asus.airtriggers.SideTapPage" android:screenOrientation="landscape"/>
+        <activity android:launchMode="singleTop" android:name="com.asus.airtriggers.SwipePage" android:screenOrientation="landscape"/>
+        <activity android:launchMode="singleTop" android:name="com.asus.airtriggers.SlidePage" android:screenOrientation="landscape"/>
+        <service android:icon="@drawable/asus_ep_statusicon_air_trigger_zen6" android:label="@string/asus_advanced_settings_gripsensor" android:name="com.asus.airtriggers.tiles.DevelopmentTiles$SwitchTile" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.asus.airtriggers.AirTriggerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.asus.airtriggers.SYSTEMUI_AIR_TRIGGER_ON"/>
+                <action android:name="com.asus.airtriggers.SYSTEMUI_AIR_TRIGGER_OFF"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.asus.airtriggers.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    </application>
+</manifest>

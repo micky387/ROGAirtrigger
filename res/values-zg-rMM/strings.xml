@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="asusres_actionbar_searchview_query_hint">ရွာေဖြမည္။</string>
+    <string name="asusres_searchview_query_hint">ရွာေဖြမည္။</string>
+    <string name="btn_correct">Retest</string>
+    <string name="continue_tap_desc">Continuous tapping (not long press), finger does not need to leave the surface of the touch area</string>
+    <string name="continue_tap_title">Finger resting setting</string>
+    <string name="continuous_tap_info">"Anti-false touch is a setting value of whether a tap is triggered when fingers are placed on the touch area.
+
+The higher the anti-false touch is set, the better the anti-false touch effect"</string>
+    <string name="continuous_tap_switch_title">Finger resting</string>
+    <string name="desc_left">Anti-false touch</string>
+    <string name="enable_vibrate_switch_summary">Vibration feedback when AirTriggers are triggered</string>
+    <string name="enable_vibrate_switch_title">Vibration</string>
+    <string name="gripsensor_grip_strength_mid">Medium</string>
+    <string name="gripsensor_grip_strength_strong">High</string>
+    <string name="gripsensor_grip_strength_weak">Low</string>
+    <string name="landscape_airtrigger_settings_title">Preferences and touch settings</string>
+    <string name="show_anim_switch_summary">Display visual feedback during game play</string>
+    <string name="show_anim_switch_title">Visual</string>
+    <string name="side_tap_seekbar_label_inside">Inner button</string>
+    <string name="side_tap_seekbar_label_outside">Outer button</string>
+    <string name="side_tap_title">Dual partition buttons setting</string>
+    <string name="slide_desc_range_left">Slide distance multiplier</string>
+    <string name="slide_desc_stable_left">Trigger distance</string>
+    <string name="slide_info_multiple">The slide distance refers to the sliding distance on the screen when you slide a certain distance on the touch area. You can adjust the multiplier according to your preference. The higher the multiplier, the longer the slide distance on screen.</string>
+    <string name="slide_info_stability">The higher the trigger distance is set, the longer the finger needs to slide to trigger the long swipe function.</string>
+    <string name="slide_title">Slide setting</string>
+    <string name="swipe_desc_left">Trigger speed</string>
+    <string name="swipe_info">The higher the trigger speed is set, the faster the finger needs to slide to trigger the swipe function.</string>
+    <string name="swipe_title">Swipe setting</string>
+    <string name="tap_test_title">Tap setting</string>
+</resources>

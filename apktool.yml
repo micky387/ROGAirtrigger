@@ -1,0 +1,45 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: ROGAirTrigger.apk
+compressionType: false
+doNotCompress:
+- classes.dex
+- resources.arsc
+- png
+- gif
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '29'
+  targetSdkVersion: '29'
+  maxSdkVersion: '29'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  firebase-analytics.properties: '8'
+  firebase-common.properties: '8'
+  firebase-components.properties: '8'
+  firebase-core.properties: '8'
+  firebase-iid-interop.properties: '8'
+  firebase-iid.properties: '8'
+  firebase-measurement-connector.properties: '8'
+  play-services-ads-identifier.properties: '8'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-measurement-api.properties: '8'
+  play-services-measurement-base.properties: '8'
+  play-services-measurement-impl.properties: '8'
+  play-services-measurement-sdk-api.properties: '8'
+  play-services-measurement-sdk.properties: '8'
+  play-services-measurement.properties: '8'
+  play-services-stats.properties: '8'
+  play-services-tasks.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.1
+versionInfo:
+  versionCode: '1600000230'
+  versionName: 10.0.0.46_200602

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:persistent="false" android:singleLine="false" android:title="@string/show_anim_switch_title" android:key="switch_show_anim" />
+    <SwitchPreference android:persistent="false" android:singleLine="false" android:title="@string/enable_vibrate_switch_title" android:key="switch_enable_vibrate" />
+    <SwitchPreference android:persistent="false" android:singleLine="false" android:title="@string/continuous_tap_switch_title" android:key="switch_continuous_tap" android:summary="@string/continue_tap_desc" />
+    <Preference android:persistent="false" android:title="@string/continue_tap_title" android:key="gripsensor_continuous_tap_strength_adjust" android:summary="@string/summary_continuous_tap">
+        <intent android:targetPackage="com.asus.airtriggers" android:targetClass="com.asus.airtriggers.ContinuousTapPage" />
+    </Preference>
+    <Preference android:persistent="false" android:title="@string/tap_test_title" android:key="gripsensor_single_point_strength_adjust" android:summary="@string/summary_slight_tap">
+        <intent android:targetPackage="com.asus.airtriggers" android:targetClass="com.asus.airtriggers.SlightTapPage" />
+    </Preference>
+    <Preference android:persistent="false" android:title="@string/side_tap_title" android:key="gripsensor_side_tap_strength_adjust">
+        <intent android:targetPackage="com.asus.airtriggers" android:targetClass="com.asus.airtriggers.SideTapPage" />
+    </Preference>
+    <Preference android:persistent="false" android:title="@string/swipe_title" android:key="gripsensor_swipe_velocity_adjust" android:summary="@string/summary_swipe">
+        <intent android:targetPackage="com.asus.airtriggers" android:targetClass="com.asus.airtriggers.SwipePage" />
+    </Preference>
+    <Preference android:persistent="false" android:title="@string/slide_title" android:key="gripsensor_slide_range_adjust" android:summary="@string/summary_slide">
+        <intent android:targetPackage="com.asus.airtriggers" android:targetClass="com.asus.airtriggers.SlidePage" />
+    </Preference>
+</PreferenceScreen>

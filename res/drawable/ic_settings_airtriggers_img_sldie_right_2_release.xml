@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <size android:height="120.0dip" android:width="35.0dip" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/slide_thumb_divider" />
+    <item android:gravity="bottom|center" android:drawable="@drawable/ic_settings_airtriggers_img_sldie_right" android:bottom="5.0dip" />
+</layer-list>

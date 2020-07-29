@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/asusres_preference_category_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerHorizontal" android:showDividers="beginning"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/asusres_preference_category_height" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd">
+        <TextView android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/asusres_preference_category_title_margin_top" android:layout_marginStart="@dimen/asusres_preference_category_title_margin_start" style="?android:listSeparatorTextViewStyle" />
+        <View android:id="@id/line" android:background="?android:colorControlActivated" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginStart="@dimen/asusres_preference_category_line_margin_start" />
+    </LinearLayout>
+</LinearLayout>

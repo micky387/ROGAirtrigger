@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/asusres_widget_inset_left" android:insetRight="@dimen/asusres_widget_inset_right" android:insetTop="@dimen/asusres_widget_inset_top" android:insetBottom="@dimen/asusres_widget_inset_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <stroke android:width="1.0dip" android:color="@color/asusres_btn_outlined_stroke_material" />
+        <corners android:radius="30.0dip" />
+        <solid android:color="@android:color/transparent" />
+        <padding android:left="20.0dip" android:top="12.0dip" android:right="20.0dip" android:bottom="12.0dip" />
+    </shape>
+</inset>

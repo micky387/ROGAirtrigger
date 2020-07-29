@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.asus.airtriggers.preference.CNPreference android:persistent="false" android:title="@string/tap_test_title" android:key="gripsensor_single_point_strength_adjust">
+        <intent android:targetPackage="com.asus.airtriggers" android:targetClass="com.asus.airtriggers.SlightTapPage" />
+    </com.asus.airtriggers.preference.CNPreference>
+    <com.asus.airtriggers.preference.CNPreference android:persistent="false" android:title="@string/side_tap_title" android:key="gripsensor_side_tap_strength_adjust">
+        <intent android:targetPackage="com.asus.airtriggers" android:targetClass="com.asus.airtriggers.SideTapPage" />
+    </com.asus.airtriggers.preference.CNPreference>
+    <com.asus.airtriggers.preference.CNPreference android:persistent="false" android:title="@string/swipe_title" android:key="gripsensor_swipe_velocity_adjust">
+        <intent android:targetPackage="com.asus.airtriggers" android:targetClass="com.asus.airtriggers.SwipePage" />
+    </com.asus.airtriggers.preference.CNPreference>
+    <com.asus.airtriggers.preference.CNPreference android:persistent="false" android:title="@string/slide_title" android:key="gripsensor_slide_range_adjust">
+        <intent android:targetPackage="com.asus.airtriggers" android:targetClass="com.asus.airtriggers.SlidePage" />
+    </com.asus.airtriggers.preference.CNPreference>
+</PreferenceScreen>

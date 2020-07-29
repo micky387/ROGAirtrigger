@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <size android:height="100.0dip" android:width="40.0dip" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:gravity="center|top" android:height="48.0dip" android:width="40.0dip" android:drawable="@drawable/ic_settings_airtriggers_img_sldie_left" />
+</layer-list>

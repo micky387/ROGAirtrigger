@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entryvalues_heavy_tap_threshold">
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>9</item>
+        <item>12</item>
+        <item>15</item>
+        <item>18</item>
+        <item>21</item>
+        <item>24</item>
+        <item>27</item>
+    </string-array>
+    <string-array name="entryvalues_slide_ratio">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="entryvalues_slide_stable">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>40</item>
+        <item>55</item>
+    </string-array>
+    <string-array name="entryvalues_slight_tap_threshold">
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>9</item>
+        <item>12</item>
+        <item>15</item>
+        <item>18</item>
+        <item>21</item>
+        <item>24</item>
+        <item>27</item>
+    </string-array>
+    <string-array name="entryvalues_squee_threshold">
+        <item>65</item>
+        <item>89</item>
+        <item>113</item>
+        <item>127</item>
+        <item>141</item>
+        <item>155</item>
+        <item>169</item>
+        <item>183</item>
+        <item>197</item>
+        <item>211</item>
+        <item>225</item>
+    </string-array>
+    <string-array name="entryvalues_squee_threshold_yoda">
+        <item>60</item>
+        <item>74</item>
+        <item>88</item>
+        <item>102</item>
+        <item>116</item>
+        <item>130</item>
+        <item>148</item>
+        <item>166</item>
+        <item>184</item>
+        <item>202</item>
+        <item>220</item>
+    </string-array>
+    <string-array name="entryvalues_swipe_velocity">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="entryvalues_tap_down_force">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+    </string-array>
+    <string-array name="entryvalues_tap_init_force">
+        <item>6</item>
+        <item>10</item>
+        <item>14</item>
+        <item>18</item>
+        <item>22</item>
+        <item>28</item>
+        <item>32</item>
+    </string-array>
+</resources>

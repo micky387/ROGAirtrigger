@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animator android:duration="125" android:repeatCount="1" android:repeatMode="reverse" android:valueFrom="0" android:valueTo="@dimen/tap_test_extra_width" android:valueType="intType"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

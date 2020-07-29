@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:top="3.0dip" android:bottom="3.0dip">
+        <shape android:tint="@color/asusres_switch_track_material_light" android:shape="rectangle">
+            <corners android:radius="@dimen/asusres_switch_track_radius" />
+            <size android:height="@dimen/asusres_switch_track_height" />
+            <padding android:left="2.0dip" android:right="2.0dip" />
+        </shape>
+    </item>
+</layer-list>

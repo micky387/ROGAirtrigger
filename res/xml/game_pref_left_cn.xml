@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:persistent="false" android:singleLine="false" android:title="@string/show_anim_switch_title" android:key="switch_show_anim" android:summary="@string/show_anim_switch_summary" app:iconSpaceReserved="false" />
+    <SwitchPreference android:persistent="false" android:singleLine="false" android:title="@string/enable_vibrate_switch_title" android:key="switch_enable_vibrate" android:summary="@string/enable_vibrate_switch_summary" app:iconSpaceReserved="false" />
+    <SwitchPreference android:persistent="false" android:singleLine="false" android:title="@string/continuous_tap_switch_title" android:key="switch_continuous_tap" android:summary="@string/continue_tap_desc" app:iconSpaceReserved="false" />
+</PreferenceScreen>
