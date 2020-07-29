@@ -19,7 +19,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "content://com.android.settings.gripsensor/short_grip_table"
+    const-string v0, "content://org.omnirom.device.gripsensor/short_grip_table"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -27,7 +27,7 @@
 
     sput-object v0, Lc/b/a/h/a;->a:Landroid/net/Uri;
 
-    const-string v0, "content://com.android.settings.gripsensor/long_grip_table"
+    const-string v0, "content://org.omnirom.device.gripsensor/long_grip_table"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 

@@ -41,9 +41,9 @@
 
     const-string v1, "asus_grip_locked_long_squeeze_enable"
 
-    const-string v2, "asus_grip_short_squeeze_enable"
+    const-string v2, "air_trigger_short_squeeze_enable"
 
-    const-string v3, "asus_grip_long_squeeze_enable"
+    const-string v3, "air_trigger_long_squeeze_enable"
 
     filled-new-array {v0, v1, v2, v3}, [Ljava/lang/String;
 
@@ -2142,12 +2142,12 @@
 
     if-nez p2, :cond_0
 
-    const-string v2, "air_trigger_double_tap_down_force_left"
+    const-string v2, "air_trigger_tap_left_threshold_level"
 
     goto :goto_0
 
     :cond_0
-    const-string v2, "air_trigger_double_tap_down_force_right"
+    const-string v2, "air_trigger_tap_right_threshold_level"
 
     :goto_0
     invoke-virtual {v0, v2, v1}, Lc/b/a/o/a;->b(Ljava/lang/String;I)V
@@ -3156,12 +3156,12 @@
 
     if-nez p1, :cond_0
 
-    const-string p1, "air_trigger_double_tap_down_force_left"
+    const-string p1, "air_trigger_tap_left_threshold_level"
 
     goto :goto_0
 
     :cond_0
-    const-string p1, "air_trigger_double_tap_down_force_right"
+    const-string p1, "air_trigger_tap_right_threshold_level"
 
     :goto_0
     const/4 v0, 0x4

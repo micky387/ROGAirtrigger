@@ -216,7 +216,7 @@
 
     move-result v3
 
-    const-string v5, "asus_grip_short_squeeze_enable"
+    const-string v5, "air_trigger_short_squeeze_enable"
 
     invoke-virtual {v2, v5, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
@@ -228,7 +228,7 @@
 
     move-result v3
 
-    const-string v4, "asus_grip_long_squeeze_enable"
+    const-string v4, "air_trigger_long_squeeze_enable"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
@@ -266,7 +266,7 @@
 
     move-result v3
 
-    const-string v5, "air_trigger_double_tap_down_force_left"
+    const-string v5, "air_trigger_tap_left_threshold_level"
 
     invoke-virtual {v2, v5, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -278,7 +278,7 @@
 
     move-result v3
 
-    const-string v5, "air_trigger_double_tap_down_force_right"
+    const-string v5, "air_trigger_tap_right_threshold_level"
 
     invoke-virtual {v2, v5, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 

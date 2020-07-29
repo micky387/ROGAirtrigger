@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:paddingLeft="?android:listPreferredItemPaddingStart" android:paddingRight="?android:listPreferredItemPaddingEnd" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.android.settings.gripsensor.GifView android:layout_gravity="center" android:id="@id/tutorial_gif" android:layout_width="270.0dip" android:layout_height="270.0dip"
+    <org.omnirom.device.gripsensor.GifView android:layout_gravity="center" android:id="@id/tutorial_gif" android:layout_width="270.0dip" android:layout_height="270.0dip"
       xmlns:android="http://schemas.android.com/apk/res/android" />
     <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/instructions_text" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
 </LinearLayout>

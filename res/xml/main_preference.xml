@@ -7,11 +7,11 @@
         <com.asus.airtriggers.preference.MasterSwitchPreference android:persistent="false" android:title="@string/gripsensor_heavypress_trigger" android:key="gripsensor_heavypress_trigger_unlock" />
     </PreferenceCategory>
     <Preference android:persistent="false" android:title="@string/gripsensor_grip_strength_adjust" android:key="gripsensor_grip_strength_adjust">
-        <intent android:targetPackage="com.asus.airtriggers" android:targetClass="com.asus.airtriggers.GripStrengthAdjustActivity" />
+        <intent android:targetPackage="org.omnirom.device" android:targetClass="org.omnirom.device.gripsensor.GripStrengthAdjustActivity" />
     </Preference>
     <PreferenceCategory android:title="@string/category_grip_tap_force" android:key="game_tap_adjust">
         <Preference android:persistent="false" android:title="@string/landscape_airtrigger_settings_title" android:key="gripsensor_value_adjust">
-            <intent android:targetPackage="com.asus.airtriggers" android:targetClass="com.asus.airtriggers.GameAdjustActivity" />
+            <intent android:targetPackage="org.omnirom.device" android:targetClass="org.omnirom.device.gripsensor.TapStrengthAdjustActivity" />
         </Preference>
     </PreferenceCategory>
 </PreferenceScreen>

@@ -49,7 +49,7 @@
 .method public Fa()Landroid/net/Uri;
     .locals 1
 
-    const-string p0, "asus_grip_short_squeeze_enable"
+    const-string p0, "air_trigger_short_squeeze_enable"
 
     invoke-static {p0}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 

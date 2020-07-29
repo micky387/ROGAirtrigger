@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
     <uses-permission android:name="com.asus.launcher.permission.CATEGORY_ACCESS"/>
     <uses-permission android:name="com.asus.focusapplistener.permission.GAME_GENIE_PROVIDER"/>
-    <uses-permission android:name="com.android.settings.gripsensor.PROVIDER"/>
+    <uses-permission android:name="org.omnirom.device.gripsensor.PROVIDER"/>
     <uses-permission android:name="ndroid.permission.BIND_SETTINGS_SUGGESTIONS_SERVICE"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
@@ -33,8 +33,8 @@
             </intent-filter>
         </activity>
         <provider android:authorities="com.asus.airtriggers.gripsensor" android:exported="true" android:name="com.asus.airtriggers.provider.GripProvider" android:permission="com.asus.airtriggers.gripsensor.PROVIDER" android:process="com.asus.services"/>
-        <activity android:launchMode="singleTop" android:name="com.asus.airtriggers.GripStrengthAdjustActivity" android:screenOrientation="portrait"/>
-        <activity android:exported="true" android:launchMode="singleTop" android:name="com.asus.airtriggers.GameAdjustActivity" android:screenOrientation="landscape"/>
+        <activity android:launchMode="singleTop" android:name="org.omnirom.device.gripsensor.GripStrengthAdjustActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="org.omnirom.device.gripsensor.TapStrengthAdjustActivity" android:screenOrientation="landscape"/>
         <activity android:exported="true" android:launchMode="singleTop" android:name="com.asus.airtriggers.AsusSetupGripStrengthAdjustActivity"/>
         <activity android:launchMode="singleTop" android:name="com.asus.airtriggers.ContinuousTapPage" android:screenOrientation="landscape"/>
         <activity android:launchMode="singleTop" android:name="com.asus.airtriggers.SlightTapPage" android:screenOrientation="landscape"/>
