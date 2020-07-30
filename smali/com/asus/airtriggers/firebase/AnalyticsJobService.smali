@@ -216,7 +216,7 @@
 
     move-result v3
 
-    const-string v5, "air_trigger_short_squeeze_enable"
+    const-string v5, "asus_grip_short_squeeze_enable"
 
     invoke-virtual {v2, v5, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
@@ -228,7 +228,7 @@
 
     move-result v3
 
-    const-string v4, "air_trigger_long_squeeze_enable"
+    const-string v4, "asus_grip_long_squeeze_enable"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 

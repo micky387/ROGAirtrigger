@@ -41,9 +41,9 @@
 
     const-string v1, "asus_grip_locked_long_squeeze_enable"
 
-    const-string v2, "air_trigger_short_squeeze_enable"
+    const-string v2, "asus_grip_short_squeeze_enable"
 
-    const-string v3, "air_trigger_long_squeeze_enable"
+    const-string v3, "asus_grip_long_squeeze_enable"
 
     filled-new-array {v0, v1, v2, v3}, [Ljava/lang/String;
 
